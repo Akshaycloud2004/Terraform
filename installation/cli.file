@@ -1,0 +1,23 @@
+1️⃣ Update repository
+
+Run this first:
+sudo apt update
+
+2️⃣ If still not working (Best method – official install of AWS CLI)
+Install using the official zip package.
+
+Step 1 — Download AWS CLI
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+Step 2 — Install unzip
+sudo apt install unzip -y
+
+Step 3 — Extract file
+unzip awscliv2.zip
+
+Step 4 — Install AWS CLI
+sudo ./aws/install
+
+3️⃣ Verify installation
+aws --version
+
