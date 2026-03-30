@@ -4,6 +4,6 @@ resource "aws_instance" "ec2" {
   instance_type = "t3.micro"
   key_name      = "my.keypair"
   tags = {
-    Name = "ec2-server"
+    Name = "server-${count.index}"
   }
 }
